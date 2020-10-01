@@ -2,7 +2,7 @@
 
 Explain what your project does here.
 
-When you are done, delete everything else on this page. It is only here for reference.
+I want to make a program that have a meaningful conversation with you and responds to different words you write. For example if i said " I am sad", it will detect the sadness and say "It takes more muscles to frown than to smile :)".
 
 Note the following Markdown formatting:
 
