@@ -1,9 +1,10 @@
 # Collaborators (including web sites where you got help: (enter none if you didn't need help)
 #  https://stackoverflow.com/questions/36550812/how-can-i-detect-multiple-words-from-a-string-python
+#megan
 import random
 s1list = []
 
-name = input("Hello! My name is Serena, what is your name?")
+name = input("Hello! My name is Jotaro, what is your name?")
 if name == 'Jack':
     print("Thats a great name, its just like the boy who once created me for his computer science project!")
 else: 
@@ -28,31 +29,69 @@ while True:
         break
     else:
         print("I am so sorry, my creator created me with limited vocabulary, please enter a simpler emotion:")
+xnum = random.randint(1,9)
+print("Now let's play a game!")
 while True:
     try:
-        number = int(input("Now let's play a game! Pick a number from 1-10 and I will tell if you are thinking of the same number as me."))
-        xnum = random.randint(1,10)
+        number = int(input("Pick a number from 1-10 and I will tell if you are thinking of the same number as me."))
         if number == xnum:
             print("Good job, I was think of " + str(xnum) + " too!")
             break
         else:
             print("Nope, keep guessing.")
     except:
-        number = int(input("please enter a number from 1-10"))
+        print("...")
 
 game = input("would you like to play another math game with me?")
 if game == 'yes':
-    print("Great! now I want you to want you to find the sum of the number that I will randomly write!")
+    print("Great! now I want you to want you to find the sum of the number that I will randomly write.")
     sum1 = 0
-    for x in range (1,11):
+    y = random.randint(1,11)
+    for x in range (y):
         sum1 = sum1 + x
         print(x)
-        y = random.randint(1,11)
-        if x == y:
-            break
     Sum = int(input("what is the sum?"))
     if Sum == sum1:
         print("Good job that is the right answer.")
+    else:
+        print("No, you got it wrong. Its ok, games are only for fun :)")
+if game =="no":
+    print("It does not matter, you are going to play the game anyways. I want you to want you to find the sum of the number that I will randomly write!")
+    sum1 = 0
+    y = random.randint(1,11)
+    for x in range (y):
+        sum1 = sum1 + x
+        print(x)
+    Sum = int(input("what is the sum?"))
+    if Sum == sum1:
+        print("Good job that is the right answer.")
+    else:
+        print("No, you got it wrong. Its ok, games are only for fun :)")
 
+print("Alright. I know that you are very busy, I have one last game for you!")
+print("I have put a ball in on of the cups, you have to guess it right 3 times in a row to finish the game. If you want to quite, just enter quit. Good luck!")
 
+def function1():
+    times = 0
+    while True:
+        try:
+            print("\_1_/" , "\_2_/" , "\_3_/")
+            cup1 = input("What cup is the ball in?")
+            cupx = random.randint(1,3)
+            if cup1 == 'quit':
+                print("It's ok to give up sometimes, this is a very hard game! I hope you can come back and try it again.")
+                break
+            if int(cup1) == cupx:
+                times = times + 1
+                print("Great job you guesed it! ")
+            elif int(cup1) != cupx:
+                times = times - 1
+                print("You got the wrong one, try again!")
+            elif times == 3:
+                print("Let's go! you got it right 3 times in a row. I knew you could do it! It is sad to see you go, but have a great day and make sure to visit me again!")
+                break
+        except:
+            print("...")
+function1()
 
+    
