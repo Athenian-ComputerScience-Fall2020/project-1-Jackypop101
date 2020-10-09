@@ -1,7 +1,12 @@
 # Pseudocode for this program
-(this can be in a flowchart, using bullet points, inserting a picture, etc)
 
-Below are templates for flowcharts and mardown. feel free to edit them - or delete them and do something else if you prefer.
+1) Writing a function that generate a random number that indicates which cup the ball is in.
+2) Writing a countdown fuction that will be used before the mini-games starts.
+3) Make a introduction that introduces the program and ask the user for their name
+4) Ask user how their day is and depending on their responds, the programs detects key words and responds according to their emotions. 
+5) Make a game where the user has to guess a number from 1-10 that will be randomly generated. 
+6) Make a game that ask the user to find the sum of a list of numbers.
+7) Use the guessing cup game function written earlier to have the user guess which cup the ball is in for 3 times in a row. 
 
 # Markdown
 
