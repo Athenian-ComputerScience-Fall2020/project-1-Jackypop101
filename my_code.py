@@ -62,8 +62,8 @@ while True:
 #random number game
 xnum = random.randint(1,9)
 print("Now let's play a game!")
+function_count()
 while True:
-    function_count()
     try:
         number = int(input("Pick a number from 1-10 and I will tell if you are thinking of the same number as me."))
         if number == xnum:
@@ -79,6 +79,7 @@ game = input("would you like to play another math game with me?")
 if game == 'yes':
     print("Great! now I want you to want you to find the sum of the number that I will randomly write.")
     function_count()
+    print("Here are the numbers, find the sum!")
     sum1 = 0
     y = random.randint(1,11)
     for x in range (y):
@@ -92,6 +93,7 @@ if game == 'yes':
 if game =="no":
     print("It does not matter, you are going to play the game anyways. I want you to want you to find the sum of the number that I will randomly write!")
     function_count()
+    print("Here are the numbers, find the sum!")
     sum1 = 0
     y = random.randint(1,11)
     for x in range (y):
